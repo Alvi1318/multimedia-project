@@ -22,7 +22,7 @@ function Historia() {
 
           <div style={{ flex: '1', minWidth: '300px', textAlign: 'center' }}>
             <img 
-              src="/assets/imatge_editada.jpg" 
+              src={process.env.PUBLIC_URL + "/assets/imatge_editada.jpg"}
               alt="Artistic postcard of Sarrià de Ter" 
               style={{ 
                 width: '100%', 

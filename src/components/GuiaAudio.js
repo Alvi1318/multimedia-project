@@ -22,7 +22,7 @@ function GuiaAudio() {
         
         <div style={{ flexShrink: 0 }}>
           <audio controls style={{ height: '40px' }}>
-            <source src="/assets/audio_ambient.mp3" type="audio/mpeg" />
+            <source src={process.env.PUBLIC_URL + "/assets/audio_ambient.mp3"} type="audio/mpeg" />
             Your browser does not support the audio element.
           </audio>
         </div>

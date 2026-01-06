@@ -12,10 +12,10 @@ function VideoPromo() {
         <div className="video-container" style={{ maxWidth: '800px', margin: '0 auto' }}>
           <video 
             controls 
-            poster="/assets/imatge_editada.jpg" 
+            poster={process.env.PUBLIC_URL + "/assets/imatge_editada.jpg"}
             style={{ width: '100%', borderRadius: '12px', boxShadow: '0 0 20px rgba(0,210,255,0.3)' }}
           >
-            <source src="/assets/video_promo.mp4" type="video/mp4" />
+            <source src={process.env.PUBLIC_URL + "/assets/video_promo.mp4"} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
