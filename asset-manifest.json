@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/sarria-turisme/static/css/main.8e685315.css",
+    "main.js": "/sarria-turisme/static/js/main.cde66255.js",
+    "static/js/453.32d2591c.chunk.js": "/sarria-turisme/static/js/453.32d2591c.chunk.js",
+    "index.html": "/sarria-turisme/index.html",
+    "main.8e685315.css.map": "/sarria-turisme/static/css/main.8e685315.css.map",
+    "main.cde66255.js.map": "/sarria-turisme/static/js/main.cde66255.js.map",
+    "453.32d2591c.chunk.js.map": "/sarria-turisme/static/js/453.32d2591c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8e685315.css",
+    "static/js/main.cde66255.js"
+  ]
+}
