@@ -59,3 +59,9 @@ The development was divided into three main stages:
 3.  **Multimedia Creation and Integration:**
     Once the code was working, I switched to GIMP and Blender to create the assets. Finally, I integrated them into the React code using the standard HTML5 tags (`<video>`, `<audio>`, `<img>`) pointing to the public folder.
 
+## 4. Access to the Live Website
+
+The project has been successfully deployed using **GitHub Pages**, making it accessible online from any browser without the need for local installation.
+
+You can visit the live version of the website at the following link:
+* **Live URL:** [https://alvi1318.github.io/multimedia-project/](https://alvi1318.github.io/multimedia-project/)
