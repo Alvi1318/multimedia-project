@@ -1,38 +1,189 @@
-.App {
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+.app-contenidor {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* --- Capçalera i Peu --- */
+.capcalera {
+  background: linear-gradient(135deg, #2c3e50, #4ca1af);
+  color: white;
+  padding: 40px 0;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.capcalera h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.peu {
+  background-color: #2c3e50;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin-top: auto;
+}
+
+/* --- Sistema de Seccions (Fons 100% + Contingut Centrat) --- */
+.seccio {
+  padding: 60px 0;
+  width: 100%;
+}
+
+.bg-blanc {
+  background-color: #ffffff;
+}
+
+.bg-gris {
+  background-color: #f4f6f8;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.titol-seccio {
+  text-align: center;
+  font-size: 2rem;
+  color: #2c3e50;
+  position: relative;
+  display: table;
+  margin: 0 auto 40px auto;
+}
+
+.titol-seccio::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #4ca1af;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+.graella-activitats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.targeta-activitat {
+  background: white;
+  border-radius: 12px;
+  width: 280px;
+  padding: 25px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #eee;
+}
+
+.targeta-activitat:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.targeta-activitat h3 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.boto-afegir {
+  background-color: #4ca1af;
+  color: white;
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+  border-radius: 25px;
+  margin-top: 15px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.boto-afegir:hover {
+  background-color: #3b8b99;
+}
+
+.cistella-contenidor {
+  background-color: white;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+  max-width: 800px;
+  margin: 40px auto 0;
+  border: 1px solid #eee;
+}
+
+.multimedia-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.item-media {
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.item-media h4 {
+  margin-bottom: 15px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.item-media img, .item-media video {
+  border-radius: 8px;
+  max-width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.targetes-info {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.info-card {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  border-top: 4px solid #4ca1af;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.mapa-container {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.contingut-text {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: justify;
+  font-size: 1.1rem;
 }
